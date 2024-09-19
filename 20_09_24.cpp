@@ -18,12 +18,16 @@ int main() {
     }
     //deducem numarul de numere pozitive, suma nr negative, produsul nr pozitive
     for (i = 0; i < n; i++){
-    if(V[i]>= 0){           //verificam daca e numarul din sir e pozitiv
-            poz++;          // adaugam +1 pentru fiecare nr pozitiv
-            p = V[i] * p;   //imultim nr pozitive
+        if(V[i]>= 0){               //verificam daca e numarul din sir e pozitiv
+            poz++;                  // adaugam +1 pentru fiecare nr pozitiv
+            p = V[i] * p;           //imultim nr pozitive
         }
-        if(V[i]< 0)s = s + V[i]; //verifican daca e nr negative si adunam suma
+        if(V[i]< 0)s = s + V[i];    //verifican daca e nr negative si adunam suma
     }
-    cout <<
+    cout << "Elementul minim: " << min << "\n";
+    cout << "Elementul maxim: " << max << "\n";
+    cout << "Numarul numerelor pozitive: " << poz << "\n";
+    cout << "Suma numerelor negative: " << s << "\n";
+    cout << "Produsul numerelor pozitive: " << p << "\n";
     return 0;
 }
