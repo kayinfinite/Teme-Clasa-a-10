@@ -5,15 +5,16 @@ int main() {
     int V[30];
     unsigned int n, i, poz;
     int min, max, s, p;
+    cout << "cate numere sa aiba vectorul: ";
     cin >> n;
     for (i = 0; i < n; i++)cin >> V[i];
-    min = 0; max = 0; s = 0; p = 1; poz = 1;
+    min = 0; max = 0; s = 0; p = 1; poz = 0;
     //deducem numarul maxim si minim din sir
     for (i = 0; i < n; i++){
         for (int x = 0; x < n; x++)
         {
             if(V[x] < min)min = V[x]; //aici deducem numarul minim
-            if(V[x] > max)min = V[x]; //aici deducem numarul maxum
+            if(V[x] > max)max = V[x]; //aici deducem numarul maxum
         }
     }
     //deducem numarul de numere pozitive, suma nr negative, produsul nr pozitive
