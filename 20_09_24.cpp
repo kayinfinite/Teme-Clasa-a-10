@@ -2,7 +2,7 @@
 
 using namespace std;
 int main() {
-    int V[30];
+    float V[30];
     unsigned int n, i, poz;
     int min, max, s, p;
     cout << "cate numere sa aiba vectorul: ";
