@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     float V[30];
     unsigned int n, i, poz;
-    int min, max, s, p;
+    float min, max, s, p;
     cout << "cate numere sa aiba vectorul: ";
     cin >> n;
     for (i = 0; i < n; i++)cin >> V[i];
