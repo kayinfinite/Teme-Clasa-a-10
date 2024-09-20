@@ -11,14 +11,9 @@ int main() {
     min = 0; max = 0; s = 0; p = 1; poz = 0;
     //deducem numarul maxim si minim din sir
     for (i = 0; i < n; i++){
-        for (int x = 0; x < n; x++)
-        {
-            if(V[x] < min)min = V[x]; //aici deducem numarul minim
-            if(V[x] > max)max = V[x]; //aici deducem numarul maxum
-        }
-    }
+        if(V[i] < min)min = V[i]; //aici deducem numarul minim
+        if(V[i] > max)max = V[i]; //aici deducem numarul maxum
     //deducem numarul de numere pozitive, suma nr negative, produsul nr pozitive
-    for (i = 0; i < n; i++){
         if(V[i]>= 0){               //verificam daca e numarul din sir e pozitiv
             poz++;                  // adaugam +1 pentru fiecare nr pozitiv
             p = V[i] * p;           //imultim nr pozitive
