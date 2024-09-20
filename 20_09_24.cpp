@@ -8,7 +8,7 @@ int main() {
     cout << "cate numere sa aiba vectorul: ";
     cin >> n;
     for (i = 0; i < n; i++)cin >> V[i];
-    min = 0; max = 0; s = 0; p = 1; poz = 0;
+    min = V[0]; max = v[0]; s = 0; p = 1; poz = 0;
     //deducem numarul maxim si minim din sir
     for (i = 0; i < n; i++){
         if(V[i] < min)min = V[i]; //aici deducem numarul minim
